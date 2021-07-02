@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="https://fonts.google.com/share?selection.family=Mulish:ital,wght@0,200;1,900">
+    <link rel="stylesheet" type="text/css" href="./figuras.css">
+    <title>figuras geometricas | Curso javascript</title>
+</head>
+<body>
+    <h1>Figuras geometricas</h1>
+    <h2>Calcula el area y perimetro de un cuadrado</h2>
+    <div class="container">
+        <div class="box">
+            <form>  
+                <p>Cuadrado</p>
+                <label>Escribe cuando mide cada lado de tu cuadrado</label>
+                <input id="inputCuadrado" type="number" placeholder="Lado ..."/>
+                <button type="button" onclick="calculaPerimetroCuadrado()">Calcular perímetro</button>
+                <button type="button" onclick="calculaAreaCuadrado()">Calcular área</button>
+            </form>
+            <p>Resultado</p>
+            <div id="resultado">                
+            </div>
+        </div>
+        <div class="box">
+            <form>  
+                <p>Triangulo</p>
+                <label>Escribe cuando mide cada lado de tu cuadrado</label>
+                <input id="inputCuadrado" type="number"/>
+                <button type="button">Calcular perímetro</button>
+                <button type="button">Calcular perímetro</button>
+            </form>
+        </div>
+        <div class="box">
+            <form>  
+                <p>Circulo</p>
+                <label>Escribe cuando mide cada lado de tu cuadrado</label>
+                <input id="inputCuadrado" type="number"/>
+                <button type="button">Calcular perímetro</button>
+                <button type="button">Calcular perímetro</button>
+            </form>
+        </div>
+    </div>
+    <script src="./figuras.js"></script>
+</body>
+</html>
