@@ -6,41 +6,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="https://fonts.google.com/share?selection.family=Mulish:ital,wght@0,200;1,900">
     <link rel="stylesheet" type="text/css" href="./figuras.css">
+    <script src="https://kit.fontawesome.com/a403b00f35.js" crossorigin="anonymous"></script>
     <title>figuras geometricas | Curso javascript</title>
 </head>
 <body>
     <h1>Figuras geometricas</h1>
     <h2>Calcula el area y perimetro de un cuadrado</h2>
     <div class="container">
-        <div class="box">
+        <div class="box">   
             <form>  
                 <p>Cuadrado</p>
+                <i class="far fa-square"></i>
                 <label>Escribe cuando mide cada lado de tu cuadrado</label>
-                <input id="inputCuadrado" type="number" placeholder="Lado ..."/>
+                <input id="inputCuadrado" type="number" placeholder="Lado "/>
                 <button type="button" onclick="calculaPerimetroCuadrado()">Calcular perímetro</button>
                 <button type="button" onclick="calculaAreaCuadrado()">Calcular área</button>
             </form>
-            <p>Resultado</p>
-            <div id="resultado">                
+            <div class="box-resultado">
+                <p>Resultado</p>
+                <div class="resultado" id="resultado">                            
+                </div>
             </div>
+            
         </div>
         <div class="box">
             <form>  
                 <p>Triangulo</p>
+                <i class="fas fa-caret-up"></i>
                 <label>Escribe cuando mide cada lado de tu cuadrado</label>
-                <input id="inputCuadrado" type="number"/>
+                <input id="inputCuadrado" type="number" placeholder="lado1"/>
+                <input id="inputCuadrado" type="number" placeholder="lado2"/>
+                <input id="inputCuadrado" type="number" placeholder="lado3"/>
                 <button type="button">Calcular perímetro</button>
-                <button type="button">Calcular perímetro</button>
+                <button type="button">Calcular area</button>
             </form>
+            <div class="box-resultado">
+                <p>Resultado</p>
+                <div class="resultado" id="resultado">                            
+                </div>
+            </div>
         </div>
         <div class="box">
             <form>  
                 <p>Circulo</p>
+                <i class="far fa-circle"></i>
                 <label>Escribe cuando mide cada lado de tu cuadrado</label>
-                <input id="inputCuadrado" type="number"/>
+                <input id="inputCuadrado" type="number" placeholder="Radio"/>
                 <button type="button">Calcular perímetro</button>
-                <button type="button">Calcular perímetro</button>
+                <button type="button">Calcular area</button>
             </form>
+            <div class="box-resultado">
+                <p>Resultado</p>
+                <div class="resultado" id="resultado">                            
+                </div>
+            </div>
         </div>
     </div>
     <script src="./figuras.js"></script>
